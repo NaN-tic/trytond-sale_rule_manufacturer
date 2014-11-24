@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- This file is part of sale_rule_manufacturer module for Tryton.
+The COPYRIGHT file at the top level of this repository contains the full
+copyright notices and license terms. -->
+<data>
+    <xpath expr="/form/group[@id='product']" position="replace_attributes">
+        <group colspan="2" col="6" id="product"/>
+    </xpath>
+    <xpath expr="/form/group/field[@name='category']" position="after">
+        <label name="manufacturer"/>
+        <field name="manufacturer"/>
+    </xpath>
+</data>

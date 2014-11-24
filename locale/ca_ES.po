@@ -1,0 +1,11 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:sale.rule.condition,manufacturer:"
+msgid "Manufacturer"
+msgstr "Fabricant"
+
+msgctxt "selection:sale.rule.condition,criteria:"
+msgid "Total Product Manufacturer Quantity"
+msgstr "Quantitat total de productes de fabricant"

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!-- This file is part of the sale_rule_manufacturer module for Tryton.
+The COPYRIGHT file at the top level of this repository contains the full
+copyright notices and license terms. -->
+<tryton>
+    <data>
+
+        <!-- sale.rule.condition -->
+        <record model="ir.ui.view" id="sale_rule_condition_tree_view">
+            <field name="model">sale.rule.condition</field>
+            <field name="inherit" ref="sale_rule.sale_rule_condition_tree_view"/>
+            <field name="name">sale_rule_condition_tree</field>
+        </record>
+        <record model="ir.ui.view" id="sale_rule_condition_form_view">
+            <field name="model">sale.rule.condition</field>
+            <field name="inherit" ref="sale_rule.sale_rule_condition_form_view"/>
+            <field name="name">sale_rule_condition_form</field>
+        </record>
+    </data>
+</tryton>
