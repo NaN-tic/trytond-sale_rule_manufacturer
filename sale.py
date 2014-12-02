@@ -26,10 +26,11 @@ class SaleRuleCondition:
     @classmethod
     def __setup__(cls):
         super(SaleRuleCondition, cls).__setup__()
-        criteria = ('manufacturer', 'Total of Products of a Manufacturer')
+        criteria = ('manufacturer', 'Total Amount of Products of a '
+            'Manufacturer')
         if criteria not in cls.criteria.selection:
             cls.criteria.selection.append(criteria)
-        criteria = ('product_manufacturer', 'Total of a Product of a '
+        criteria = ('product_manufacturer', 'Total Amount of a Product of a '
             'Manufacturer')
         if criteria not in cls.criteria.selection:
             cls.criteria.selection.append(criteria)
