@@ -7,5 +7,9 @@ msgid "Manufacturer"
 msgstr "Fabricant"
 
 msgctxt "selection:sale.rule.condition,criteria:"
-msgid "Total Product Manufacturer Quantity"
-msgstr "Quantitat total de productes de fabricant"
+msgid "Total Amount of Products of a Manufacturer"
+msgstr "Quantitat total de productes de un fabricant"
+
+msgctxt "selection:sale.rule.condition,criteria:"
+msgid "Total Amount of a Product of a Manufacturer"
+msgstr "Quantitat total de un producte de un fabricant"
