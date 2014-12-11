@@ -81,11 +81,10 @@ class SaleRuleCondition:
         pool = Pool()
         Template = pool.get('product.template')
         templates = Template.search([
-                (self.criteria, '=', getattr(self, self.criteria)),
+                ('category', '=', self.category.id),
                 ])
         quantity = sum([l.quantity for l in sale.lines
-                if (getattr(l, 'category') in templates and
+                if (l.product and l.product.template) in templates and
                     getattr(l, 'manufacturer') == getattr(self, 'manufacturer')
-                    )
                 ])
         return self.apply_comparison(quantity)
