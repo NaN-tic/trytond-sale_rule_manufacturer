@@ -6,10 +6,10 @@ from trytond.pool import Pool, PoolMeta
 from trytond.pyson import Eval, Equal, In, Not
 
 __all__ = ['SaleRuleCondition']
-__metaclass__ = PoolMeta
 
 
 class SaleRuleCondition:
+    __metaclass__ = PoolMeta
     __name__ = 'sale.rule.condition'
     manufacturer = fields.Many2One('party.party', 'Manufacturer',
         states={
